@@ -1,3 +1,4 @@
+/* Global reset and font styling */
 * {
     margin: 0;
     padding: 0;
@@ -5,42 +6,78 @@
     font-family: "Poppins", sans-serif;
 }
 
-.container {
-    width: 300px; /* Fixed width for the popup */
-    height: auto; /* Auto height based on content */
-    min-height: 400px; /* Minimum height */
+/* Image styling */
+img {
+    width: 50px; /* Default size of the images */
+    height: auto;
+    vertical-align: middle;
+}
+
+/* Specific styling for To-Do icon */
+.todo-icon {
+    width: 30px; /* Adjust size of the To-Do icon */
+    height: auto;
+    margin-left: 10px; /* Spacing between text and icon */
+}
+
+/* Input styling */
+input {
+    border-radius: 15px;
+    padding: 10px;
+    border: 2px solid #ccc;
+    width: 138px;
+}
+
+/* Button styling */
+.button {
+    width:50px; /* Same as image width */
+    height: 50px; /* Same as image height */
+    border: none;
+    border-radius: 50%; /* Make it round */
+    cursor: pointer;
     background: linear-gradient(135deg, #153677, #4e085f);
-    padding: 20px; /* Padding inside the container */
-    color: white; /* Text color for contrast */
-    border-radius: 8px; /* Rounded corners */
-    display: flex; /* Flexbox layout */
-    flex-direction: column; /* Stack items vertically */
-    justify-content: center; /* Center items vertically */
-    align-items: center; /* Center items horizontally */
-    text-align: center; /* Center text */
+    display: flex; /* Center image inside button */
+    align-items: center; /* Vertical center */
+    justify-content: center; /* Horizontal center */
+    overflow: hidden;
 }
 
-/* Optional button styling */
-.action-button {
-    margin-top: 10px; /* Space above the button */
-    padding: 10px 20px; /* Button padding */
-    border: none; /* No border */
-    border-radius: 5px; /* Rounded button corners */
-    background-color: #4e085f; /* Button color */
-    color: white; /* Button text color */
-    cursor: pointer; /* Pointer on hover */
-    font-size: 16px; /* Font size for button text */
-    transition: background-color 0.3s; /* Transition for hover effect */
+.button img {
+    width: 40px; /* Slightly smaller for better fit */
+    height: 40px;
 }
 
-.action-button:hover {
-    background-color: #6a2b8f; /* Change color on hover */
+.button:hover {
+    background: linear-gradient(135deg, #0fa022, #0fa023);
 }
 
-.todo-app{
-    width:100%;
-    max-height: 25px;
-    margin: 100px,auto,20px;
+/* Container styling */
+.container {
+    width: 300px;
+    height: auto;
+    min-height: 400px;
+    background: linear-gradient(135deg, #153677, #4e085f);
+    padding: 20px;
+    color: white;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+   
+}
+
+/* To-Do app styling */
+.todo-app {
+    width: 100%;
+    margin: 20px auto; /* Reduce this to bring it higher up */
     padding: 40px 30px 70px;
     border-radius: 10px;
+}
+
+/* Flex container for aligning input and button */
+.textDummy {
+    display: flex; /* Flexbox for horizontal alignment */
+    align-items: center; /* Center items vertically */
+    gap: 10px; /* Space between input and button */
 }

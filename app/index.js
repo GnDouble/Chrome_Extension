@@ -1,15 +1,20 @@
+document.addEventListener("DOMContentLoaded", () => {
+    console.log("Script loaded and DOMContentLoaded event fired.");
 
+    const button = document.getElementById("myTick");
+    
+    // Log the button to verify if it was found
+    console.log("Button element:", button);
 
-async function sayHello() {
-    let queryOptions = { active: true, lastFocusedWindow: true };
-    let [tab] = await chrome.tabs.query({ active: true});
-    chrome.scripting.executeScript({
-        target: { tabId: tab.id },
-        func: () => {
-            //document.body
-            alert("Is that inline?")
-        }
-    });
+    if (button) {
+        button.addEventListener("click", getTextk);
+        console.log("Event listener attached to button.");
+    } else {
+        console.error("Button with id 'myTick' not found in the DOM.");
+    }
+});
 
+async function getTextk() {
+    const taskInput = document.getElementById("dummyId").value;
+    document.getElementById("output").innerText = `Your task: ${taskInput}`;
 }
-document.getElementById("myButton").addEventListener("click", sayHello);
