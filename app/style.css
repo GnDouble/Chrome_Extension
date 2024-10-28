@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.container {
+    width: 300px; /* Fixed width for the popup */
+    height: auto; /* Auto height based on content */
+    min-height: 400px; /* Minimum height */
+    background: linear-gradient(135deg, #153677, #4e085f);
+    padding: 20px; /* Padding inside the container */
+    color: white; /* Text color for contrast */
+    border-radius: 8px; /* Rounded corners */
+    display: flex; /* Flexbox layout */
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Center items vertically */
+    align-items: center; /* Center items horizontally */
+    text-align: center; /* Center text */
+}
+
+/* Optional button styling */
+.action-button {
+    margin-top: 10px; /* Space above the button */
+    padding: 10px 20px; /* Button padding */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded button corners */
+    background-color: #4e085f; /* Button color */
+    color: white; /* Button text color */
+    cursor: pointer; /* Pointer on hover */
+    font-size: 16px; /* Font size for button text */
+    transition: background-color 0.3s; /* Transition for hover effect */
+}
+
+.action-button:hover {
+    background-color: #6a2b8f; /* Change color on hover */
+}
+
+.todo-app{
+    width:100%;
+    max-height: 25px;
+    margin: 100px,auto,20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+}

@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "To-Do",
+  "description": "Runs a script when the user clicks the action toolbar icon.",
+  "version": "1.0",
+  "icons": {
+    "16": "images/image (1).png", 
+    "32": "images/image (2).png",
+    "48": "images/image (3).png",
+    "128": "images/image (4).png"
+  },
+  "background": {
+    "service_worker": "service-worker.js" 
+  },
+  "action": {
+    "default_icon": {
+      "16": "images/image (1).png",
+      "32": "images/image (2).png",
+      "48": "images/image (3).png",
+      "128": "images/image (4).png"
+    },
+    "default_popup": "index.html" 
+  },
+  "permissions": ["scripting","activeTab"],
+  "host_permissions": [
+    "http://*/*",
+    "https://*/*"
+  ]
+}
