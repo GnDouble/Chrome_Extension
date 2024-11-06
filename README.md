@@ -5,8 +5,8 @@ This project is focused on learning the basics of creating a Chrome extension, w
 
 ## Features
 - **Add Tasks**: Users can add new tasks to the to-do list.
-- **Edit Tasks**: Users can modify existing tasks.
 - **Remove Tasks**: Users can delete tasks from the list.
+- **Toggle Task Status**: Users can mark tasks as complete (crossed out).
 - **Persistent Storage**: Tasks will be saved and persist even after the browser is closed using the Chrome Storage API.
 
 ## Learning Objectives
@@ -17,6 +17,6 @@ By completing this project, the key learning goals are:
    - Learn how to use popup or background scripts.
 
 2. **Chrome Storage API**:
-   - Learn how to use `chrome.storage.local` to persist data across browser sessions.
-   - Understand the differences between `chrome.storage.local` and `chrome.storage.sync`.
+   - Learn how to use chrome.storage.api to persist data across browser sessions.
    - Explore storing, retrieving, and removing data using the Chrome Storage API.
+
