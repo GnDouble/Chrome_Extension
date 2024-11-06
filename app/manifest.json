@@ -21,7 +21,7 @@
     },
     "default_popup": "index.html" 
   },
-  "permissions": ["scripting","activeTab"],
+  "permissions": ["scripting","activeTab","Storage"],
   "host_permissions": [
     "http://*/*",
     "https://*/*"

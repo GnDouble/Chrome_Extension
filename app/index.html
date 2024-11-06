@@ -3,25 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your To-Do List</title>
-    <link href="style.css" rel="stylesheet">
+    <title>To-Do List</title>
+    <!-- Link to External CSS File -->
+    <link href="style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-    <div class="container">
-        <div class="todo-app">
-            <h2 style="align-items: top;">
-                To-Do List 
-                <img src="images/to-do.jpeg" alt="To-Do Icon">
-            </h2>
-            <div class="textDummy">
-                <input placeholder="Enter your task" id="dummyId" />
-                <button class="button" id="myTick">
-                     <img src="images/tick.png">
-                </button>
-            </div>
-            <p id="output"></p>
-        </div>
+    <div id="header">
+        <h2>It's up to you :)</h2>
     </div>
-    <script src="index.js"></script>
+
+    <div id="form">
+        <input class="todo-input" type="text" placeholder="Add a task...">
+        <button class="todo-btn" type="button">New task</button>
+    </div>
+    
+    <div id="taskOut">
+        <!-- List of Tasks -->
+        <ul>
+            <li>Sample Task 1</li>
+            <li>Sample Task 2</li>
+            <li>Sample Task 3</li>
+        </ul>
+    </div>
 </body>
 </html>

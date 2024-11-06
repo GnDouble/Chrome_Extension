@@ -1,83 +1,51 @@
-/* Global reset and font styling */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+body {
+    height: 500px;
+    width: 400px;
+    background-color: grey;
 }
 
-/* Image styling */
-img {
-    width: 50px; /* Default size of the images */
-    height: auto;
-    vertical-align: middle;
-}
-
-/* Specific styling for To-Do icon */
-.todo-icon {
-    width: 30px; /* Adjust size of the To-Do icon */
-    height: auto;
-    margin-left: 10px; /* Spacing between text and icon */
-}
-
-/* Input styling */
-input {
-    border-radius: 15px;
-    padding: 10px;
-    border: 2px solid #ccc;
-    width: 138px;
-}
-
-/* Button styling */
-.button {
-    width:50px; /* Same as image width */
-    height: 50px; /* Same as image height */
-    border: none;
-    border-radius: 50%; /* Make it round */
-    cursor: pointer;
-    background: linear-gradient(135deg, #153677, #4e085f);
-    display: flex; /* Center image inside button */
-    align-items: center; /* Vertical center */
-    justify-content: center; /* Horizontal center */
-    overflow: hidden;
-}
-
-.button img {
-    width: 40px; /* Slightly smaller for better fit */
-    height: 40px;
-}
-
-.button:hover {
-    background: linear-gradient(135deg, #0fa022, #0fa023);
-}
-
-/* Container styling */
-.container {
-    width: 300px;
-    height: auto;
-    min-height: 400px;
-    background: linear-gradient(135deg, #153677, #4e085f);
-    padding: 20px;
-    color: white;
-    border-radius: 8px;
+#header {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: center;
     text-align: center;
-   
+    margin-top: 20px;
 }
 
-/* To-Do app styling */
-.todo-app {
-    width: 100%;
-    margin: 20px auto; /* Reduce this to bring it higher up */
-    padding: 40px 30px 70px;
-    border-radius: 10px;
+#form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: #edeef0;
+    border-radius: 20px;
+    padding: 10px 15px; /* Reduced padding for more space */
+    gap: 10px; /* Adds space between the input and button */
 }
 
-/* Flex container for aligning input and button */
-.textDummy {
-    display: flex; /* Flexbox for horizontal alignment */
-    align-items: center; /* Center items vertically */
-    gap: 10px; /* Space between input and button */
+.todo-input {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 10px;
+    background: transparent;
+    font-size: 16px;
+    max-width: calc(100% - 120px); /* Limits input width to make room for button */
+}
+
+.todo-btn {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    background: #ff9f76;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 30px;
+}
+#taskOut {
+    display: flex;
+    flex-direction: row; /* Arrange items horizontally */
+    justify-content: center; /* Center form items horizontally */
+    align-items: center; /* Center form items vertically */
+    margin-top: 20px;
+
 }
