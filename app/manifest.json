@@ -1,16 +1,14 @@
 {
   "manifest_version": 3,
-  "name": "To-Do",
-  "description": "Runs a script when the user clicks the action toolbar icon.",
+  "name": "To-Do List Extension",
+  "description": "A simple to-do list extension that helps you keep track of your tasks and save them for future sessions.",
   "version": "1.0",
+  "author": "Marvin Weiss",
   "icons": {
     "16": "images/image (1).png", 
     "32": "images/image (2).png",
     "48": "images/image (3).png",
     "128": "images/image (4).png"
-  },
-  "background": {
-    "service_worker": "service-worker.js" 
   },
   "action": {
     "default_icon": {
@@ -19,11 +17,8 @@
       "48": "images/image (3).png",
       "128": "images/image (4).png"
     },
-    "default_popup": "index.html" 
+    "default_popup": "index.html",
+    "default_title": "Open To-Do List"
   },
-  "permissions": ["scripting","activeTab","Storage"],
-  "host_permissions": [
-    "http://*/*",
-    "https://*/*"
-  ]
+  "permissions": ["storage"]
 }
